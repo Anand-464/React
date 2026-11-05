@@ -1,4 +1,4 @@
-import './App.css'
+//import './App.css'
 
 function App() {
   let obj= [{name: "Ebi", location: "Trivandrum", age: 20}, 

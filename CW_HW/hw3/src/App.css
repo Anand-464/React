@@ -1,0 +1,19 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
