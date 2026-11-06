@@ -1,5 +1,5 @@
 import welcomeImg from './images/welcome.jpg'
-//import './App.css'
+import './App.css'
 
 function App() {
 
@@ -23,36 +23,6 @@ function App() {
 
       </div>
 
-      <style>{`
-        .profile-card {
-          width: 350px;
-          max-width: 100%;
-          padding: 25px;
-          border: 2px solid #333;
-          border-radius: 15px;
-          background-color: #e3f2fd;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
-        .profile-img {
-          width: 150px;
-          height: 150px;
-          object-fit: cover;
-          border-radius: 50%;
-          margin: 10px;
-          border: 3px solid #333;
-        }
-
-        h2 {
-          color: #1565c0;
-          margin-bottom: 20px;
-        }
-
-        p {
-          color: #444;
-          font-size: 15px;
-        }
-      `}</style>    
     </div>
   );
 }
