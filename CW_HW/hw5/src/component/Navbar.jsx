@@ -1,0 +1,27 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+function Navbar() {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
+        <NavLink className="navbar-brand" to="/">
+          My Website
+        </NavLink>
+        <div className="navbar-nav">
+          <NavLink to="/home" end className="nav-link">
+            Home
+          </NavLink>
+          <NavLink to="/about" className="nav-link">
+            About
+          </NavLink>
+          <NavLink to="/contact" className="nav-link">
+            Contact
+          </NavLink>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;

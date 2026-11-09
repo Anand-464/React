@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { useState } from "react";
+import About from "./About";
 
 function App() {
 
+  const [show, setShow] = useState(true);
+
   return (
-    <>
-      <h1>hello</h1>
-    </>
-  )
+    <div>
+      <button onClick={() => setShow(!show)}>
+        Show / Hide Stopwatch
+      </button>
+
+      {show && <About />}
+    </div>
+  );
 }
 
-export default App
+export default App;
