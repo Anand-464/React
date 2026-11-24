@@ -1,0 +1,60 @@
+
+/* =========================
+   GLOBAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f1f6fc;
+    color: #263445;
+}
+
+/* Main theme colours */
+:root {
+    --primary: #0756a3;
+    --primary-dark: #06447e;
+    --primary-light: #e5f1ff;
+    --background: #f1f6fc;
+    --white: #ffffff;
+    --text: #263445;
+    --muted: #718096;
+    --border: #dce6f0;
+}
+
+/* Common buttons */
+.btn {
+    transition: all 0.25s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Common cards */
+.card {
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Form inputs */
+.form-control {
+    border-radius: 7px;
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(7, 86, 163, 0.15);
+}
+
+/* Links */
+a {
+    transition: color 0.25s ease;
+}

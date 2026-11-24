@@ -1,0 +1,370 @@
+/* DASHBOARD */
+
+.dashboard-page {
+    min-height: 100vh;
+    background: #f1f6fc;
+}
+
+.dashboard-container {
+    padding: 30px 0 40px;
+}
+
+.dashboard-title {
+    color: #0756a3;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+
+.dashboard-card {
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+}
+
+.dashboard-card:hover {
+    box-shadow: 0 5px 18px rgba(0,0,0,.1);
+}
+
+.dashboard-card-header,
+.medicine-list-header {
+    background: #0756a3;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 14px 18px;
+    border: none;
+}
+
+.medicine-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.medicine-list-header h5 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* STATISTICS */
+
+.statistics-card {
+    border-left: 5px solid #0756a3;
+}
+
+.statistics-number,
+.medicine-stat-info h3 {
+    color: #0756a3;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.statistics-number {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.medicine-stat-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.medicine-progress {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.medicine-progress svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.progress-background,
+.progress-value {
+    fill: none;
+    stroke-width: 9;
+}
+
+.progress-background {
+    stroke: #e5edf5;
+}
+
+.progress-value {
+    fill: none;
+    stroke-width: 9;
+    stroke-linecap: round;
+    transition: stroke-dasharray .6s ease, stroke .6s ease;
+}
+
+.progress-0,
+.progress-1,
+.progress-2 {
+    stroke: green;
+}
+
+.progress-3 {
+    stroke: yellow;
+}
+ 
+.progress-4 {
+    stroke: orange;
+}
+
+.progress-5 {
+    stroke: red;
+}
+
+.progress-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0756a3;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.medicine-stat-info h5 {
+    color: #718096;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.medicine-stat-info h3 {
+    margin-bottom: 5px;
+}
+
+.medicine-stat-info p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.capacity-available {
+    color: #047857;
+}
+
+.capacity-full {
+    color: red;
+    font-weight: 600;
+}
+
+/* FORMS AND SEARCH */
+
+.dashboard-card .form-label {
+    color: #34465a;
+    font-weight: 600;
+}
+
+.dashboard-card .form-control {
+    padding: 10px 12px;
+}
+
+.dashboard-card textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.dashboard-search {
+    margin-bottom: 20px;
+}
+
+.dashboard-search .form-control {
+    padding: 12px;
+    border: 1px solid #dce6f0;
+}
+
+.medicine-search {
+    position: relative;
+    width: 280px;
+}
+
+.medicine-search input {
+    padding: 9px 12px 9px 35px;
+    border: none;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+.medicine-search input:focus {
+    box-shadow: 0 0 0 3px rgba(255,255,255,.25);
+}
+
+.medicine-search i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #718096;
+    z-index: 2;
+}
+
+/* BUTTONS */
+
+.dashboard-primary-btn,
+.dashboard-cancel-btn {
+    transition: all .3s ease;
+}
+
+.dashboard-primary-btn {
+    background: #0756a3;
+    color: white;
+    border: 1px solid #0756a3;
+}
+
+.dashboard-primary-btn:hover {
+    background: #06447e;
+    color: white;
+    border-color: #06447e;
+}
+
+.dashboard-cancel-btn {
+    background: #e5edf5;
+    color: #34465a;
+    border: 1px solid #dce6f0;
+}
+
+.dashboard-cancel-btn:hover {
+    background: #d4e1ef;
+    color: #263445;
+}
+
+.dashboard-primary-btn:disabled,
+.dashboard-cancel-btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* STOCK STATUS */
+
+.stock-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.in-stock {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.low-stock {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.out-of-stock {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* MEDICINE TABLE */
+
+.medicine-list-card {
+    margin-top: 5px;
+}
+
+.medicine-table {
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.medicine-table thead th {
+    background: #e5f1ff;
+    color: #0756a3;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.medicine-table td {
+    color: #34465a;
+    padding: 12px 10px;
+}
+
+.medicine-table tbody tr {
+    transition: background-color .2s ease;
+}
+
+.medicine-table tbody tr:hover {
+    background: #eaf3fc;
+}
+
+.action-buttons {
+    white-space: nowrap;
+}
+
+/* PAGINATION */
+
+.dashboard-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.dashboard-pagination span {
+    color: #526477;
+    font-weight: 500;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding-top: 20px;
+    }
+
+    .dashboard-title {
+        font-size: 23px;
+    }
+
+    .dashboard-card .card-body {
+        padding: 15px;
+    }
+
+    .dashboard-pagination {
+        flex-wrap: wrap;
+    }
+
+    .medicine-table {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .medicine-list-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .medicine-search {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .medicine-stat-content {
+        gap: 15px;
+    }
+
+    .medicine-progress {
+        width: 90px;
+        height: 90px;
+    }
+}

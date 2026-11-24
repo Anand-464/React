@@ -1,0 +1,155 @@
+/* NAVBAR */
+
+.main-navbar {
+    background: #0756a3;
+    padding: 14px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* BRAND */
+
+.main-navbar .navbar-brand {
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: opacity 0.3s ease;
+}
+
+.main-navbar .navbar-brand:hover {
+    color: white;
+    opacity: 0.85;
+}
+
+/* NAVIGATION LINKS */
+
+.main-navbar .nav-link {
+    position: relative;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 14px;
+    transition: all 0.3s ease;
+}
+
+.main-navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    bottom: 3px;
+    width: calc(100% - 28px);
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.main-navbar .nav-link:hover,
+.main-navbar .nav-link.active {
+    color: white;
+}
+
+.main-navbar .nav-link:hover::after,
+.main-navbar .nav-link.active::after {
+    transform: scaleX(1);
+}
+
+/* LOGOUT BUTTON */
+
+.main-navbar .logout-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: inherit;
+    appearance: none;
+}
+
+
+/* LOGOUT CONFIRMATION POPUP */
+
+.logout-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    animation: fadeIn .2s ease;
+}
+
+.logout-popup {
+    width: 90%;
+    max-width: 380px;
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+    animation: popupIn .25s ease;
+}
+
+.logout-popup h5 {
+    color: #0756a3;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.logout-popup p {
+    color: #718096;
+    margin-bottom: 25px;
+}
+
+.logout-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logout-actions button {
+    min-width: 90px;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.logout-no-btn {
+    background: #c8d0d5;
+    color: #34465a;
+}
+
+.logout-no-btn:hover {
+    background: #9ba0a5;
+}
+
+.logout-yes-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.logout-yes-btn:hover {
+    background: #ab1b1b;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popupIn {
+    from {
+        opacity: 0;
+        transform: scale(.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
